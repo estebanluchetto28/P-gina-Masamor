@@ -1,0 +1,134 @@
+/* BANNER */
+
+#banner{
+  position: relative;
+}
+
+#banner video{
+  object-fit: contain;
+  width: 100%;
+  /* margin-bottom: -7px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#banner h1{
+  position: absolute;
+  color: #FFC77A;
+  width: 75%;
+  justify-self: center;
+  padding-top: 12%;
+  z-index: 2;
+}
+
+/* PRODUCTOS */
+
+.productos{
+  background-color: #D88C54;
+  padding-top: 850px;
+  width: 100%;
+}
+
+.productos h1{
+  color: #A4412A;
+}
+
+.productos hr{
+  background-color: #FFC77A;
+}
+
+/* INFORMACIÓN */
+
+#informacion{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  padding: 40px 0px;
+  text-align: center;
+  justify-self: center;
+  background-color: #A4412A;
+  background-image: url(../src/Imágenes/Fondo_información.png);
+}
+
+#informacion h1{
+  color: #FFC77A;
+}
+
+#informacion p{
+  color: #D88C54;
+}
+
+#informacion hr{
+  background-color: #D88C54;
+}
+
+#informacion-bloques{
+  width: 80%;
+  justify-self: center;
+}
+
+/* CONTACTO */
+
+
+footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  width: 100%;
+  background-color: #FFC77A;
+ 
+}
+
+footer h1{
+  color: #A4412A;
+}
+
+footer hr{
+  background-color: #D88C54;
+}
+
+footer p{
+  text-indent: 7%;
+  color: #D88C54;
+  text-align: left;
+}
+
+footer span{
+  color: #A4412A;
+  font-weight: bold;
+}
+
+footer img{
+  width: 300px;
+  display: block;
+  justify-self: right;
+}
+
+#contacto{
+  width: 90%;
+  justify-self: left;
+  margin-left: 10%;
+}
+
+#contacto-imagenes{
+  position: relative;
+  height: 100%;
+}
+
+#semillas-img{
+  position: absolute;
+  width: 370px;
+  bottom: 0;
+  right: 0;
+}
+
+#contacto-logo{
+  position: absolute;
+  justify-self: center;
+  top: 13%;
+  z-index: 10;
+  width: 370px;
+}
+

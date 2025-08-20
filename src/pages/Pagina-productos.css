@@ -1,0 +1,44 @@
+.Pagina-productos{
+  background-color: #D88C54;
+  padding-bottom: 50px;
+}
+
+.Pagina-productos hr{
+  background-color: #FFC77A;
+}
+
+.Pagina-productos h1{
+  color: #A4412A;
+  margin-left: 50px;
+}
+
+.filtros{
+  display: flex;
+  justify-self: right;
+  margin-right: 25px;
+  gap: 30px;
+}
+
+.filtros h2{
+  color: #A4412A;
+  font-weight: bold;
+}
+
+.Pagina-productos button{
+  background-color: transparent;
+  color: #FFC77A;
+  border: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0px;
+  height: 25px;
+  align-self: center;
+}
+
+.Pagina-productos button:hover{
+  color: #A4412A;
+}
+
+.clickeado{
+  color: #A4412A;
+}

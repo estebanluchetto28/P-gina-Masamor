@@ -1,0 +1,275 @@
+/* TIPOGRAFÍAS */
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('./Tipografías/Pacifico/Pacifico-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Source sans 3';
+  src: url('./Tipografías/Source_Sans_3/static/SourceSans3-Bold.ttf');
+  font-style: normal;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Source sans 3';
+  src: url('./Tipografías/Source_Sans_3/static/SourceSans3-SemiBold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Source sans 3';
+  src: url('./Tipografías/Source_Sans_3/static/SourceSans3-Medium.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* ESTILOS GENERALES */
+
+*{
+  /* box-sizing: border-box; */
+  text-align: center;
+  font-family: "Source sans 3";
+  font-weight: normal;
+}
+
+body{
+  margin: 0%;
+}
+
+button{
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-family: "Pacifico";
+  font-size: 80px;
+}
+
+p {
+  font-size: 30px;
+}
+
+img{
+  object-fit: contain;
+}
+
+li{
+  list-style: none;
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 100;
+  top: 0px;
+  background-color: transparent;
+  transition: background-color 1s ease;
+}
+
+.deslizado{
+  background-color: #A4412A;
+}
+
+nav{
+  width: 100%;
+}
+
+.logo-header{
+  width: 200px;
+}
+
+header a{
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFC77A;
+}
+
+header a:hover{
+  opacity: 68%;
+}
+
+header img{
+  padding-top: 5px;
+}
+
+nav ul{
+  display: flex;
+  gap: 10%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 4%;
+}
+
+#carrito img{
+  width: 40px;
+}
+
+/* GRILLA PRODUCTOS */
+
+.productos-grilla{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 275px;
+  row-gap: 30px;
+  margin-top: 60px;
+  height: min-content;
+  column-gap: 2%;
+}
+
+  /* ITEM */
+
+  .item{
+    color: #A4412A;
+    background-color: #FFC77A;
+    border-radius: 20px;
+    padding: 10px 10px 10% 10px;
+    width: 180px;
+    justify-self: center;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+  }
+
+  .item:hover{
+    transform: scale(1.07);
+    background-color: #ffcd88;
+    cursor: pointer;
+    
+  }
+
+  #img-item{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .item h3{
+    font-size: 22px;
+    margin: 0%;
+    padding-top: 10px;
+  }
+
+.productos button{
+  font-size: 22px;
+  padding: 0.5em 1.2em;
+  margin: 100px 0px;
+  background-color: #A4412A;
+  color: #FFC77A;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+
+.productos button:hover{
+  transform: scale(1.07);
+}
+
+/* TÍTULO */
+
+.titulo{
+  width: fit-content;
+}
+
+.titulo h1{
+  margin-top: 0%;
+  margin-bottom: 60px;
+}
+
+.subrayado{
+  padding: 15px 25px;
+  border: 0px;
+  border-radius: 7px;
+  width: 100%;
+  margin: -115px 0px 60px 0px;
+  justify-self: center;
+}
+
+/* .secciones{
+  margin-left: 10%;
+} */
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

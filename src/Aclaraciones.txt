@@ -1,0 +1,8 @@
+COLORES:
+
+Caqui: 255, 199, 122  #FFC77A
+Beige: 216, 140, 84   #D88C54
+Marrón: 164, 65, 42   #A4412A
+Verde: 154, 170, 61   #9AAA3D
+
+carácter especial: ©

@@ -1,0 +1,43 @@
+.Pagina-item{
+    padding-top: 110px;
+    background-color: #D88C54;
+    color: #FFC77A;
+}
+
+.grilla-info-item{
+    display: flex;
+    margin: 0px 10%;
+}
+
+.Pagina-item h1{
+    color: #A4412A;
+}
+
+.Pagina-item hr{
+    background-color: #FFC77A;
+}
+
+.Pagina-item p{
+    width: 80%;
+    text-align: left;
+    justify-self: center;
+    margin: 0px;
+    line-height: 100%;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.grilla-info-item div{
+    width: 50%;
+    justify-content: center;
+}
+
+.grilla-info-item h3{
+    font-size: 35px;
+    color: #A4412A;
+    width: 80%;
+    text-align: left;
+    justify-self: center;
+    margin: 0px;
+    line-height: 100%;
+}
