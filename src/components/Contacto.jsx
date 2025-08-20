@@ -7,7 +7,7 @@ export default function Contacto(){
     return <footer>
         <div id="contacto">
             <Titulo nombre={"Contacto"}/>
-            <p><span>Instagram:</span> @masamor.ok </p>
+            <p><span>Instagram:</span> @masamor.oks </p>
             <p><span>Whatsapp:</span> +54 9 11 3294-8632 </p>
             <p><span>E-mail:</span> masamor@gmail.com  </p>
             <p><span>Ubicación:</span> Tosso 216, San Vicente </p>
