@@ -14,31 +14,56 @@
 
 .filtros{
   display: flex;
-  justify-self: right;
-  margin-right: 25px;
+  justify-self: left;
+  margin-left: 25px;
   gap: 30px;
 }
 
 .filtros h2{
   color: #A4412A;
-  font-weight: bold;
+  background-color: #FFC77A;
+  border-radius: 7px;
+  padding-inline: 20px;
+  height: 50px;
+  font-size: 25px;
+  align-content: center;
+  font-weight: 700;
 }
 
-.Pagina-productos button{
-  background-color: transparent;
-  color: #FFC77A;
+.filtros button{
+  background-color: #A4412A;
   border: transparent;
-  cursor: pointer;
   font-size: 20px;
-  padding: 0px;
-  height: 25px;
+  padding-inline: 20px;
+  height: 40px;
   align-self: center;
+  align-content: center;
+  border-radius: 50px;
+  color: #FFC77A;
 }
 
-.Pagina-productos button:hover{
+#restablecer{
+  background-color: #FFC77A;
   color: #A4412A;
 }
 
-.clickeado{
+#buscador{
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  align-content: center;
+  background-color: #FFC77A;
+  border: transparent;
+  align-self: center;
+  padding-inline: 50px;
+  margin-left: 5px ;
+  font-size: 20px;
   color: #A4412A;
+  font-weight: 700;
+  outline: none;
+}
+
+#buscador::placeholder
+{
+  color: #D88C54;
 }

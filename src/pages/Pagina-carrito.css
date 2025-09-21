@@ -1,0 +1,96 @@
+.pagina-carrito{
+    background-color: #FFC77A;
+    color: #D88C54;
+    padding-top: 100px;
+    min-height: 84.5vh;
+    align-content: center;
+}
+
+.pagina-carrito h2{
+    font-size: 35px;
+    margin: 0px 35px 0px 35px;
+    color: #A4412A;
+    font-weight: 900; 
+}
+
+.pagina-carrito h3{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #D88C54;
+}
+
+.error-input{
+    border: solid 3px #cf310dff!important;
+    background-color: #fa7f64 !important;
+    color: #cf310dff !important;
+}
+
+.pagina-carrito input{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: transparent;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 7px;
+    background-color: #D88C54;
+    font-size: 17px;
+    text-align: left;
+    color: #FFC77A;
+}
+
+.pagina-carrito div{
+    justify-self: center;
+}
+
+.pagina-carrito table{
+    width: 520px;
+    justify-self: center;
+}
+
+.pagina-carrito th{
+    background-color: #A4412A;
+    font-weight: 700;
+    padding: 5px;
+    color: #FFC77A;
+}
+
+.pagina-carrito td{
+    background-color: #D88C54;
+    color: #A4412A;
+    max-width: 130px;
+}
+
+.pagina-carrito button{
+    justify-self: center;
+    padding: 5px 15px;
+    background-color: #9AAA3D;  
+    border: none;
+}
+
+.pagina-carrito button:hover{
+    background-color: #a4b353; 
+}
+
+.pagina-carrito table button{
+    background-color: #A4412A;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina-carrito table button:hover{
+    background-color: #D88C54; 
+}
+
+.inputs{
+    display: flex;
+    justify-self: center;
+}

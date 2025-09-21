@@ -4,8 +4,6 @@ import Titulo from "./Título"
 import GrillaProductos from "./GrillaProductos"
 
 // import imagen from "../Imágenes/Banner_sin-degradado.png"
-import { alimentos } from "../Productos-info"
-
 
 export default function Productos(){
     return(

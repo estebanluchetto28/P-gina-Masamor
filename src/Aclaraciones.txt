@@ -6,3 +6,57 @@ Marrón: 164, 65, 42   #A4412A
 Verde: 154, 170, 61   #9AAA3D
 
 carácter especial: ©
+
+🚀 INSTRUCCIONES FINALES - DESPLIEGUE SELF-CONTAINED
+
+## ✅ SOLUCIÓN AL ERROR 500.31
+
+**Problema resuelto:** El error "Failed to load ASP.NET Core runtime" se solucionó creando una versión **self-contained** que incluye el runtime de .NET 8.
+
+## 📁 ARCHIVOS LISTOS PARA SUBIR
+
+**Carpeta:** `publish-selfcontained/`
+
+### Archivos Principales:
+- ✅ `EcommerceAPI.exe` - Aplicación principal (self-contained)
+- ✅ `web.config` - Configurado para usar el .exe directamente
+- ✅ `appsettings.json` - Configuración de la aplicación
+- ✅ `appsettings.Production.json` - Configuración de producción
+- ✅ Todas las DLLs necesarias incluidas
+
+## 🔧 CONFIGURACIÓN DEL APPLICATION POOL
+
+**IMPORTANTE:** Ahora puedes usar cualquiera de estas opciones:
+- ✅ **"No Managed Code"** (RECOMENDADO)
+- ✅ **".NET CLR Version v4.0"** (también funciona)
+
+**Managed Pipeline Mode:** Integrated
+
+## 📋 PASOS PARA SUBIR AL SERVIDOR
+
+1. **Eliminar archivos anteriores** del servidor
+2. **Subir TODOS los archivos** de `publish-selfcontained/` al directorio del sitio
+3. **Verificar que `web.config` esté en la raíz**
+4. **Reiniciar el Application Pool** en IIS
+5. **Probar:** `http://149.50.159.21:8154/swagger`
+
+## 🎯 VENTAJAS DE ESTA SOLUCIÓN
+
+- ✅ **No depende** del .NET 8 Hosting Bundle en el servidor
+- ✅ **Incluye todo** el runtime necesario
+- ✅ **Funciona inmediatamente** sin configuración adicional
+- ✅ **Mantiene todas las funcionalidades** (JWT, CORS, base de datos, etc.)
+
+## 🔍 VERIFICACIÓN
+
+Después del despliegue, deberías poder acceder a:
+- `http://149.50.159.21:8154/swagger` - Documentación de la API
+- `http://149.50.159.21:8154/api/products` - Endpoint de productos
+- `http://149.50.159.21:8154/api/auth/register` - Registro de usuarios
+
+## ⚠️ NOTAS IMPORTANTES
+
+- El archivo `EcommerceAPI.exe` es la aplicación principal
+- Todos los archivos DLL están incluidos (no necesitas .NET en el servidor)
+- La base de datos ya está configurada y las migraciones aplicadas
+- El campo `Image` para base64 está disponible en productos

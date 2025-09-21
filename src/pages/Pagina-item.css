@@ -1,9 +1,8 @@
 .Pagina-item{
-    padding-top: 110px;
+    padding: 100px 0px 76px 0px; 
     background-color: #D88C54;
-    color: #FFC77A;
 }
-
+/* NO SE QUE LE PASA AL TAMAÑO DE LA PAGINA ABAJO */
 .grilla-info-item{
     display: flex;
     margin: 0px 10%;
@@ -11,6 +10,7 @@
 
 .Pagina-item h1{
     color: #A4412A;
+    font-size: 70px;
 }
 
 .Pagina-item hr{
@@ -18,7 +18,7 @@
 }
 
 .Pagina-item p{
-    width: 80%;
+    width: 85%;
     text-align: left;
     justify-self: center;
     margin: 0px;
@@ -27,17 +27,72 @@
     margin-bottom: 20px;
 }
 
+
 .grilla-info-item div{
     width: 50%;
-    justify-content: center;
 }
 
 .grilla-info-item h3{
     font-size: 35px;
     color: #A4412A;
-    width: 80%;
+    width: 85%;
     text-align: left;
     justify-self: center;
     margin: 0px;
     line-height: 100%;
+    font-weight: 700;
+}
+
+#foto-item{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: #D88C54, solid, 5px;
+    box-shadow: 0 0 0 7px #FFC77A;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox{
+    color: #A4412A;
+    font-size: 20px;
+    font-weight: 700;
+    align-content: center;
+}
+
+.checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked + .checkmark::after {
+    display: block;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin: 20px 8px 20px 15px;
+    border: solid 3px #A4412A;
+}
+
+input:checked + .checkmark {
+    background-color: #A4412A;
+}
+
+.boton-agregar{
+    background-color: #A4412A;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
 }

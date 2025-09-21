@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, use } from "react"
 import { Link } from "react-router-dom"
 
 import logo from "../Imágenes/Logo versiones/Masamor_logo_horizontal.png"
-import carrito from "../imágenes/bolsa-de-compras.png"
+import bolsaCompras from "../imágenes/bolsa-de-compras.png"
 
+import { CarritoContext } from "../store/carrito-context"
 
 export default function Header({inicio})
 {
+    const { carrito } = use(CarritoContext)
+
     const [deslizado, setDeslizado] = useState(false)
 
     if(inicio){
@@ -23,20 +26,30 @@ export default function Header({inicio})
     })
     }
     
+    let totalCantidad = 0;
+
     return(
-        <>
-            <header className={deslizado || !inicio ? "deslizado" : ""}>
-                <nav>
-                    <ul>
-                        <li> <img className="logo-header" src={logo} alt="MASAMOR" /> </li>
-                        <li> <Link to="/">Inicio</Link> </li>
-                        <li> <Link to="/nosotros" >Nosotros</Link> </li>
-                        <li> <Link to="/productos">Productos</Link> </li>
-                        <li> <a href="#contacto" >Contacto</a> </li>
-                        <li> <Link id="carrito" to="/carrito"> <img src={carrito} alt="carrito-de-compras"/> </Link> </li>
-                    </ul>
-                </nav>
-            </header>
-        </>
+        <header className={deslizado || !inicio ? "deslizado" : ""}>
+            <nav>
+                <ul>
+                    <li> <img className="logo-header" src={logo} alt="MASAMOR" /> </li>
+                    <li> <Link to="/">Inicio</Link> </li>
+                    <li> <Link to="/nosotros" >Nosotros</Link> </li>
+                    <li> <Link to="/productos">Productos</Link> </li>
+                    <li> <a href="#contacto" >Contacto</a> </li>
+                    <li id="carrito-contenedor" style={{position: "relative"}}> 
+                        <Link id="carrito" to="/carrito"> <img src={bolsaCompras} alt="carrito-de-compras"/>
+                            {carrito.map(item => {
+                                totalCantidad += item.cantidad;
+                            })}
+                            {totalCantidad > 0 &&
+                            <span className="icon"> {totalCantidad} </span>
+                            }
+                        </Link>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
     )
 }

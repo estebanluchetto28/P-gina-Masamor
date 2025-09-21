@@ -5,9 +5,8 @@
 }
 
 #banner video{
-  object-fit: contain;
+  /* object-fit: contain; */
   width: 100%;
-  /* margin-bottom: -7px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -16,7 +15,6 @@
 
 #banner h1{
   position: absolute;
-  color: #FFC77A;
   width: 75%;
   justify-self: center;
   padding-top: 12%;
@@ -46,14 +44,9 @@
   grid-template-columns: 50% 50%;
   width: 100%;
   padding: 40px 0px;
-  text-align: center;
   justify-self: center;
   background-color: #A4412A;
   background-image: url(../src/Imágenes/Fondo_información.png);
-}
-
-#informacion h1{
-  color: #FFC77A;
 }
 
 #informacion p{
@@ -64,7 +57,7 @@
   background-color: #D88C54;
 }
 
-#informacion-bloques{
+.informacion-bloques{
   width: 80%;
   justify-self: center;
 }
@@ -78,7 +71,6 @@ footer{
   text-align: left;
   width: 100%;
   background-color: #FFC77A;
- 
 }
 
 footer h1{
@@ -97,7 +89,7 @@ footer p{
 
 footer span{
   color: #A4412A;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 footer img{
@@ -130,5 +122,14 @@ footer img{
   top: 13%;
   z-index: 10;
   width: 370px;
+}
+
+#derechos{
+  background-color: #D88C54;
+  width: 100%;
+  margin: -16px;
+  justify-self: center;
+  letter-spacing: 0.5px;
+  font-size: 11px;
 }
 

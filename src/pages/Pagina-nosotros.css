@@ -1,0 +1,44 @@
+.nosotros-titulo{
+    margin-top: 86px;
+    padding: 10px;
+    color:  #A4412A;
+    background-color: #D88C54;
+}
+
+.cuerpo-nosotros-1{
+    background-image: url(/src/Imágenes/nosotros-fondo1.png);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+    
+}
+.cuerpo-nosotros-2{
+    background-image: url(/src/Imágenes/nosotros-fondo2.png);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+}
+.nosotros-titulo hr{
+    background-color: #FFC77A;
+}
+.cuerpo-nosotros-1 h2{
+    margin-top: -1px;
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 55%;
+    font-size: 27px;
+}
+.cuerpo-nosotros-2 h2{
+    margin-top: -1px;
+    text-align: right;
+    padding-left: 55%;
+    padding-right: 75px;
+    font-size: 27px;
+}
+
+.nosotros-titulo h1{
+   color: #A4412A;
+}
+
